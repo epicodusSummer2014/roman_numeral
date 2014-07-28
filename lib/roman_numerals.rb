@@ -5,16 +5,16 @@ def roman_numerals(number)
 		5 => 'V', 4 => 'IV', 1 => 'I'
 	}
 
-  result = []
+	result = []
 
-  numerals.each do |k,v|
- 	  if k <= number
- 		  result.push(v)
- 		  number -= k
- 		  redo
+ 	numerals.each do |k,v|
+ 		if k <= number
+ 			result.push(v)
+ 			number -= k
+ 			redo
  		end
-  end
-	result.join
+ 	end
+  result.join
 end
 
-p roman_numerals(4)
+p roman_numerals(567)
